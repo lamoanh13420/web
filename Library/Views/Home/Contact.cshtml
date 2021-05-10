@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<!-- //banner1 -->
+<!-- contact -->
+<div class="services">
+    <div class="container">
+        <div class="w3layouts_header">
+            
+            <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></p>
+        </div>
+        <div class="col span_2_of_3">
+            <div class="contact-form">
+                
+                <form>
+                    <div>
+                        <span><label>NAME</label></span>
+                        <span><input type="text" class="textbox"></span>
+                    </div>
+                    <div>
+                        <span><label>E-MAIL</label></span>
+                        <span><input type="text" class="textbox"></span>
+                    </div>
+                    <div>
+                        <span><label>MOBILE</label></span>
+                        <span><input type="text" class="textbox"></span>
+                    </div>
+                    <div>
+                        <span><label>SUBJECT</label></span>
+                        <span><textarea> </textarea></span>
+                    </div>
+                    <div>
+                        <span><input type="submit" value="Submit"></span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact -->
+<div class="map-grid">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424143.0428986048!2d150.65177630482995!3d-33.847973034849154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney+NSW%2C+Australia!5e0!3m2!1sen!2sin!4v1488261232220" class="map" style="border:0" allowfullscreen=""></iframe>
+</div>
+<!-- subscribe -->
+<div class="footer-top">
+    <div class="container">
+        <div class="col-md-4 welcome">
+            <h3>Andragogy</h3>
+            <p>The opportunity to help students learn and grow. Come be a part of our schools, whether as an involved parent, a student, a community volunteer, or a partner. Pulling together, we can accomplish our goal.</p>
+
+        </div>
+        <div class="col-md-3 address">
+            <h3>Address</h3>
+            <p>
+                Eiusmod Tempor inc
+                <span>St Dolore Place,Kingsport 56777.</span>
+            </p>
+            <p class="phone">
+                Phone : +1 123 456 789
+                <span>Email : <a href="mailto:example@email.com">mail@example.com</a></span>
+                <span>FAX : <a href="mailto:example@email.com">123 456 7890</a></span>
+            </p>
+        </div>
+        <div class="col-md-5 wthree-subscribe">
+            <h3>Newsletter </h3>
+            <p>Receive the latest useful information, daily.</p>
+            <div class="w3-agileits-subscribe-form">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Email" name="Subscribe" required="">
+                    <button class="btn1">Subscribe</button>
+                </form>
+            </div>
+            <div class="agile_header_social">
+                <ul class="agileits_social_list">
+                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- start-smooth-scrolling -->
+<!-- for bootstrap working -->
+<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>

@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+
+}
+
+<div class="w3l-head">
+    <h1>library membership form</h1>
+</div>
+<div class="w3ls-form">
+    <form action="#" medthod="post">
+        <div class="w3l-last-grid1">
+            <div class="w3l-grid1">
+                <label class="text">First name</label>
+                <div class="w3l-div">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" name="name" placeholder="first name" required="" />
+                </div>
+            </div>
+            <div class="w3l-grid2">
+                <label class="text">Last name</label>
+                <div class="w3l-div">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" name="name" placeholder="last name" required="" />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="w3l-last-grid1">
+            <div class="w3l-grid1">
+                <label class="text">gender</label>
+                <div class="w3l-div">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <select class="form-control" required="">
+                        <option>gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="w3l-grid2">
+                <label class="text">date of birth</label>
+                <div class="w3l-div">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <input type="text" class="date" id="datepicker" name="date of birth" placeholder="dob" value="MM/DD/YYYY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MM/DD/YYYY';}" required="" />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="w3l-last-grid1">
+            <div class="w3l-grid1">
+                <label class="text">Your Email</label>
+                <div class="w3l-div">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <input type="email" name="email" placeholder="e-mail" required="" />
+                </div>
+            </div>
+            <div class="w3l-grid2">
+                <label class="text">phone number</label>
+                <div class="w3l-div">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="text" name="contact" placeholder="phone number" required="" />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="w3l-last-grid1">
+            <div class="w3l-grid1">
+                <label class="text">address</label>
+                <div class="w3l-div">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <input type="text" name="address" placeholder="current address" required="" />
+                </div>
+            </div>
+            <div class="w3l-grid2">
+                <label class="text">city</label>
+                <div class="w3l-div">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <input type="text" name="city" placeholder="city" required="" />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="w3l-right-grid1">
+            <div class="w3l-grid1">
+                <label class="text">state</label>
+                <div class="w3l-div">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <input type="text" name="state" placeholder="state/province" required="" />
+                </div>
+            </div>
+            <div class="w3l-grid2">
+                <label class="text">zipcode</label>
+                <div class="w3l-div">
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                    <input type="text" name="zipcode" placeholder="postal" required="" />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="w3l-right-grid1">
+            <div class="w3l-grid1">
+                <label class="text">takes member ship <span>?</span></label>
+                <div class="w3l-div">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    <select class="form-contro3" required="">
+                        <option>membership</option>
+                        <option>yearly</option>
+                        <option>quarterly</option>
+                        <option>weakly</option>
+                        <option>never</option>
+                    </select>
+                </div>
+            </div>
+            <label class="text">which type of books</label>
+            <div class="w3l-grid2">
+                <div class="w3l-div">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <select class="form-contro2" required="">
+                        <option>select books</option>
+                        <option>history</option>
+                        <option>science</option>
+                        <option>social</option>
+                        <option>mathematics</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="w3ls-submit">
+            <input type="submit" value="add a member">
+        </div>
+    </form>
+</div>
+<footer>&copy; 2018 library membership Form. All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a></footer>
+
+<!-- Default-JavaScript -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Calendar -->
+<script src="js/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#datepicker,#datepicker1").datepicker();
+    });
+</script>
+<!-- //Calendar -->
